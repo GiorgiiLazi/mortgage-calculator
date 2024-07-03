@@ -20,7 +20,7 @@
       <form>
         <div class="form-header">
           <h1 class="form-header-h1">Mortgage repayment calculator</h1>
-          <input type="reset" value="Clear all" class="form-reset">
+          <input class="btn btn-link" type="reset" value="Reset">
         </div>
 
         
@@ -65,11 +65,13 @@
             </label>
           </div>
         </div>
-        
-        <div class="submit-btn-container">
-          <input type="image" src="./assets/images/icon-calculator.svg" alt="">
-          <input type="submit" value="Calculate Repayment">
-        </div>
+        <button class="btn btn-success type="submit">
+          <img src="./assets/images/icon-calculator.svg" alt="">
+          <span>Calculate Repayment</span>
+        </button>
+          
+        </input>
+       
        
       </form>
 
@@ -78,15 +80,13 @@
     <section class="results-container">
       <div class="second-header">
         <h1 class="results-title">Your results</h1>
-        <p class="results-text">Your results are shown below based on the information you provided</p>
+        <p class="results-text">Your results will be shown below based on the information you provided</p>
       </div>
 
-      <div class="results box" >
+      <div class="results-box" >
         <h4 id="payments-title">Your monthly payments</h4>
         <h1 id="monthly-payments"></h1>
-
-        <h4 id="total-title">Total you'll repay over term</h4>
-        <h3 id="paiments-total"></h3>
+        <h3 id="payments-total"></h3>
 
       </div>
     </section>
