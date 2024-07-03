@@ -15,7 +15,7 @@ const monthlyPayment = (amount, term, interestRate) =>{
         monthlyRepayment =  p * i * (Math.pow(1 + i, n)) / (Math.pow(1 + i, n) - 1);
         
    
-        return `${monthlyRepayment.toFixed(2)} $`;
+        return `${monthlyRepayment.toFixed(2)} ￡`;
 }
 
 const overpay = (amount, term, interestRate) =>{
@@ -26,7 +26,7 @@ const overpay = (amount, term, interestRate) =>{
         monthlyRepayment =  p * i * (Math.pow(1 + i, n)) / (Math.pow(1 + i, n) - 1);
         
         const all = monthlyRepayment * n // total amount you will pay to bank
-        return `Total you'll repay over term ${(all - amount).toFixed(2)} $`
+        return `Total you'll repay over term ${(all - amount).toFixed(2)} ￡`
     }
     
     
